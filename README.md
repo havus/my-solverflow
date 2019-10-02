@@ -1,9 +1,9 @@
-# Hacktiv Overflow
+# My Solverflow
 
 Exercise project
 
 All the endpoints API can be access from:
-```jacascript
+```javascript
 http://localhost:3000
 ```
 

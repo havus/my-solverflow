@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.ATLAS_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
+  useUnifiedTopology: true,
 });
 
 app.use(require('morgan')('dev'));
