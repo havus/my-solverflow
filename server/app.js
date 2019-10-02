@@ -4,9 +4,8 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const PORT = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://admin:admin@master-cluster-nwspo.mongodb.net/hacktiv-overflow?retryWrites=true&w=majority', {
+mongoose.connect(process.env.ATLAS_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
 });
